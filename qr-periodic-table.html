@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bảng tuần hoàn QR</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .table {
+      display: grid;
+      grid-template-columns: repeat(18, 1fr);
+      gap: 8px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .element {
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 12px;
+    }
+    .element img {
+      width: 80px;
+      height: 80px;
+      margin-top: 5px;
+    }
+    .empty {
+      visibility: hidden;
+    }
+
+    /* Màu nhóm nguyên tố */
+    .nonmetal { background-color: #99ccff; }
+    .noble-gas { background-color: #cc99ff; }
+    .alkali-metal { background-color: #ff9999; }
+    .alkaline-earth { background-color: #ffcc99; }
+    .metalloid { background-color: #ffff99; }
+  </style>
+</head>
+<body>
+  <h1>Bảng tuần hoàn QR (20 nguyên tố đầu tiên)</h1>
+  <div class="table">
+    <!-- H -->
+    <div class="element nonmetal">
+      <strong>1 - H</strong>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/hydrogen.html">
+    </div>
+    <!-- 16 ô trống -->
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <!-- He -->
+    <div class="element noble-gas">
+      <strong>2 - He</strong>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/helium.html">
+    </div>
+
+    <!-- Hàng 2 -->
+    <div class="element alkali-metal"><strong>3 - Li</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/lithium.html"></div>
+    <div class="element alkaline-earth"><strong>4 - Be</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/beryllium.html"></div>
+    <!-- 10 ô trống -->
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <!-- B đến Ne -->
+    <div class="element metalloid"><strong>5 - B</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/boron.html"></div>
+    <div class="element nonmetal"><strong>6 - C</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/carbon.html"></div>
+    <div class="element nonmetal"><strong>7 - N</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/nitrogen.html"></div>
+    <div class="element nonmetal"><strong>8 - O</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/oxygen.html"></div>
+    <div class="element nonmetal"><strong>9 - F</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/fluorine.html"></div>
+    <div class="element noble-gas"><strong>10 - Ne</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/neon.html"></div>
+
+    <!-- Hàng 3 -->
+    <div class="element alkali-metal"><strong>11 - Na</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/sodium.html"></div>
+    <div class="element alkaline-earth"><strong>12 - Mg</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/magnesium.html"></div>
+    <!-- 10 ô trống -->
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <!-- Al đến Ar -->
+    <div class="element"><strong>13 - Al</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/aluminium.html"></div>
+    <div class="element metalloid"><strong>14 - Si</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/silicon.html"></div>
+    <div class="element nonmetal"><strong>15 - P</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/phosphorus.html"></div>
+    <div class="element nonmetal"><strong>16 - S</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/sulfur.html"></div>
+    <div class="element nonmetal"><strong>17 - Cl</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/chlorine.html"></div>
+    <div class="element noble-gas"><strong>18 - Ar</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/argon.html"></div>
+
+    <!-- Hàng 4 -->
+    <div class="element alkali-metal"><strong>19 - K</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/potassium.html"></div>
+    <div class="element alkaline-earth"><strong>20 - Ca</strong><img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://meminhduy-dev.github.io/periodic-table/elements/calcium.html"></div>
+  </div>
+</body>
+</html>
